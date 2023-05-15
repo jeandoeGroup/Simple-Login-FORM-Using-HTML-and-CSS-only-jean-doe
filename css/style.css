@@ -1,0 +1,180 @@
+/* custom css file designed by jean doe  */
+
+/* define a root variable */
+
+:root{
+    --main-clr: #e74c3c;
+    --black: #2c3e50;
+    --white: #fff;
+    --font-family: 'Popins', 'Nunito', 'Corbel', Arial, sans-serif;
+    --bdr: 1px solid #121314;
+    --light-bg: #f8f7f8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+html{
+    /* font-size: 90%; */
+    font-family: var(--font-family);
+}
+
+body{
+    height: 100vh;
+    border: var(--bdr);
+    background-color: var(--light-bg);
+}
+
+.header{
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.header .logo{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header .logo span{
+    color: var(--main-clr);
+    font-size: 1.2rem;
+}
+
+.wrapper{
+    width: 25rem;
+    height: 80vh;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: .25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    border: var(--bdr);
+}
+
+.wrapper .title{
+    color: var(--black);
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+.wrapper .form{
+    /* border: var(--bdr); */
+    width: 100%;
+}
+
+.form .input-box{
+    /* border: var(--bdr); */
+    margin: .5rem 0;
+}
+
+.form .input-box p{
+    color: var(--black);
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+.form .input-box p span{
+    color: var(--main-clr);
+}
+
+.form .input-box input{
+    font-size: .85rem;
+}
+
+.form .input-box .box{
+    color: var(--black);
+    background-color: var(--light-bg);
+    padding: .8rem;
+    border-radius: .25rem;
+    width: 100%;
+}
+
+.form .input-box .btn{
+    color: var(--black);
+    background-color: var(--light-bg);
+    padding: .8rem;
+    border-radius: .25rem;
+    width: 100%;
+    text-transform: capitalize;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.form .input-box .btn:hover{
+    color: var(--main-clr);
+}
+
+.form .sub-link{
+    margin: 1rem .5rem;
+}
+.form .sub-link p a{
+    color: var(--black);
+}
+.form .sub-link p a:hover{
+    text-decoration: underline;
+    color: var(--main-clr);
+}
+
+.wrapper .more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.wrapper .more h3{
+    font-size: .9rem;
+    color: var(--black);
+    font-weight: lighter;
+    margin-bottom: .5rem;
+}
+
+.wrapper .more div{
+    display: inline-flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.3rem;
+    flex-wrap: wrap;
+}
+
+.wrapper .more div p ion-icon{
+    color: var(--black);
+    width: 100%;
+}
+.wrapper .more div p span{
+    color: var(--black);
+    margin-left: 0.3rem;
+    cursor: pointer;
+}
+
+
+.wrapper .more div p span:hover{
+    text-decoration: underline;
+    color: var(--main-clr);
+}
+
+@media(max-width:425px) {
+
+    .wrapper{
+        width: 100%;
+        border-radius: 0;
+        border: none;
+    }
+    
+}
