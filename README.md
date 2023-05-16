@@ -2,7 +2,7 @@
 Simple Login FORM Using HTML and CSS only #jean-doe is responsive and you are free to use this source code and contact us for more
 
 #---------- links --------
-get video link on youtube 
+video link on youtube 
 https://youtu.be/BTuiuig_PV8
 
 
